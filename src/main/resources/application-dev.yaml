@@ -1,0 +1,18 @@
+spring:
+  # Database
+  datasource:
+    url: jdbc:mysql://localhost:3306/taskflow_db
+    username: root
+    password: 1122
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  # Jpa
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: org.hibernate.dialect.MySQLDialect
+      format_sql: true
+
+server:
+  port: 8080
